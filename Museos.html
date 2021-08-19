@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="favicon/x-icon" href="../../Imagen iglesia.ico">
+    <link rel="stylesheet" type="text/css" href="../pagina web/">
+
+</head>
+<style>
+    * {
+
+        padding: 0;
+        margin: 0;
+
+
+
+
+
+    }
+
+    /* Estilos generales */
+    body {
+
+     
+    }
+
+    .wrap {
+
+        width: 1000px;
+        margin: 0px auto;
+
+
+    }
+
+    .clearfix {
+
+        float: none;
+        clear: both;
+    }
+
+    /*Cabezera*/
+
+
+    #header {
+
+        width: 100%;
+        height: 65px;
+        background-color: black;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-style: italic;
+
+    }
+
+
+    #logo {
+        float: left;
+        background-color: rgb(0, 204, 255);
+        width: 200px;
+        height: 20%;
+
+        margin-top: 8px;
+        margin-left: 20px;
+        text-transform: uppercase;
+         !important text-align: center;
+
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+
+
+
+
+
+
+    #logo h3 {
+        margin-right: 53px;
+        display: block;
+        font-size: 35px;
+        float: right;
+        margin-top: 5px;
+        transition: all 300ms;
+    }
+
+
+    #menu {
+
+        float: right;
+        height: 70px;
+        background: transparent;
+        line-height: 70px;
+
+    }
+
+
+    #menu ul li {
+        font-size: 18px;
+        display: inline-block;
+        margin: 0px 20px 0px 20px;
+        text-decoration: none;
+
+    }
+
+
+    #menu ul li a {
+
+
+        color: rgb(247, 242, 242);
+    }
+
+    #menu ul li :hover {
+
+        font-size: 19px;
+      
+        transform: scale(1.2, 1.2);
+
+
+    }
+
+    #banner {
+
+        width: 100%;
+        height: 100px;
+        border: 10px solid white;
+        box-shadow: 0px 0px 2px gray;
+        background-color: rgb(0, 204, 255);
+        margin: 20px auto;
+    }
+
+    #banner h1 {
+
+        display: block;
+        width: 850px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 45px;
+        letter-spacing: 2px;
+        margin: 27px auto;
+        text-shadow: 2px 2px 1px black;
+        text-align: center;
+
+    }
+
+    /* Tarjetas*/
+    .cards {
+        float: left;
+        width: 205px;
+        height: 305px;
+        border: 1px solid #ddd;
+        box-shadow: 1px 1px 2px #ddd;
+        overflow: hidden;
+        margin: 20px;
+        margin-top: 40px;
+        cursor: pointer;
+
+    }
+
+    .icon {
+
+        text-align: center;
+
+
+
+    }
+
+    .cards>img {
+
+        width: 120%;
+        height: 100%;
+
+
+
+    }
+
+    .cards {
+
+        border-radius: 10%;
+
+
+    }
+
+    .cards:hover {
+
+        transition: all 300ms;
+        outline: solid 15px rgb(202, 167, 144);
+
+    }
+
+    #lateral {
+
+        width: 300px;
+        min-height: 500px;
+        font-family: 'Courier New', Courier, monospace;
+        float: right;
+        margin: 30px;
+
+    }
+
+
+    aside h3 {
+
+        display: block;
+        width: auto;
+        height: 45px;
+        line-height: 49px;
+        box-shadow: 0px 1px 0px #393d3f, 3px 4px 0px #393d3f, 3px 4px 0px #393d3f;
+        background-color: rgb(219, 217, 217);
+        font-size: 30px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        padding-left: 15px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+
+    }
+
+
+    .h3 {
+        margin-top: 0px;
+
+    }
+
+    #buscar {
+
+        width: 90%;
+        height: 30px;
+        margin: 10 px auto;
+        margin-top: 20px;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 1px 1px 4px #ccc inset;
+        border-radius: 5px;
+    }
+
+
+
+    #lateral input[type="text"] {
+
+        width: 90%;
+        height: 30px;
+        border: none;
+        padding-left: 5px;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #ccc;
+        transition: all 600ms;
+    }
+
+    #lateral input[type="text"]:focus {
+
+
+
+        color: #555;
+    }
+
+    #lateral input[type="buttom"],
+    #lateral input[type="submit"] {
+
+
+        height: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        background-color: transparent;
+        border: none;
+        border-left: 1 px solid #ccc;
+        color: #555;
+        padding-left: 6px;
+
+
+
+    }
+
+    .aside-box {
+
+        width: 95%;
+        height: 240px;
+        margin: 0px auto;
+        margin-top: 20 px;
+        padding-top: 2px;
+        background: white;
+
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 1px white inset, 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
+    }
+
+
+    #login input[type="email"],
+    #login input[type="password"] {
+        display: block;
+        margin: 0px auto;
+        width: 85%;
+        margin-top: 20px;
+        height: 30px;
+        border: 2px solid #ccc;
+        box-shadow: 1px 1px 1px #ccc inset;
+        border-radius: 5px;
+        padding-left: 30px;
+        transition: all 600ms;
+        color: #ccc;
+
+    }
+
+
+    #login input[type="email"]:focus,
+    #login input[type="password"]:focus {
+
+        color: rgb(24, 21, 21);
+
+        box-shadow: 1px 1px 1px grey inset;
+
+
+    }
+
+    #login #user,
+    #login #password {
+        display: block;
+        text-align: center;
+        position: absolute;
+        margin-left: 15px;
+        margin-top: 10px;
+        height: 30px;
+
+
+    }
+
+    #login #password {
+
+        margin-top: 30px;
+
+    }
+
+
+    #login input[type="submit"],
+    #login input[type="buttom"],
+    #login input[type="reset"],
+    #login button {
+
+        /**display: block;**/
+        text-align: center;
+        width: 100px;
+        height: 35px;
+        margin-top: 15px;
+        color: white;
+        background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+        border: 1px solid #156785;
+        border-radius: 0px;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+        margin-left: 25px;
+    }
+
+
+
+    #login input[type="submit"]:hover,
+    #login input[type="buttom"]:hover,
+    #login input[type="reset"]:hover,
+    #login button:hover {
+
+
+        border: #555;
+
+
+    }
+
+
+
+    #login input[type="submit"]:active,
+    #login input[type="buttom"]:active,
+    #login input[type="reset"]:active,
+    #login button:active {
+
+        color: white;
+        background: #0d607e;
+    }
+
+
+    #login a {
+        display: block;
+        text-decoration: none;
+        font-size: 15px;
+        margin-left: 18px;
+        color: #555;
+        margin-top: 10px;
+    }
+
+
+    #login a:hover {
+
+        text-decoration: underline;
+
+
+
+    }
+
+    #login a:active {
+
+        color: blue;
+
+
+    }
+
+
+    #sociales a {
+
+
+        display: block;
+        color: #333;
+        text-decoration: none;
+        font-size: 30px;
+        margin-left: px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .facebook p:hover {
+
+        color: blue;
+        text-decoration: underline;
+    }
+
+    .Twitter p:hover {
+
+
+        color: #1aa8d8;
+        text-decoration: underline;
+    }
+
+
+    .Youtube p:hover {
+
+
+        color: red;
+        text-decoration: underline;
+
+
+    }
+
+
+
+    .Instagram p:hover {
+
+
+        text-decoration: underline;
+        color: #d93d7e;
+    }
+
+
+    /**Articulos  **/
+
+
+    #articles {
+
+        float: left;
+        width: 600px;
+        margin-left: 150px;
+    }
+
+
+    #articles h2 {
+        display: block;
+        width: 100%;
+        height: 75px;
+        line-height: 75px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 40px;
+        letter-spacing: 2px;
+        background-color: grey;
+        box-shadow: 0px 1px 0px #393d3f, 3px 4px 0px #393d3f, 3px 4px 0px #393d3f;
+        margin-top: 28px;
+        margin-bottom: 15px;
+
+    }
+
+    #articles article {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        margin: 40px auto;
+        padding: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: white;
+        color: black;
+        box-shadow: 1px 1px 2px #ddd;
+
+    }
+
+    #articles article h4 a {
+
+        display: block;
+        font-size: 23px;
+        margin: 3px;
+
+
+    }
+
+    #articles article h4 a {
+
+        text-decoration: none;
+        color: #00538c;
+
+    }
+
+
+    #articles article h4 a:hover {
+
+
+
+        text-decoration: underline;
+    }
+
+
+    #articles .data {
+
+
+        float: right;
+        background: #393d3f;
+        color: white;
+        height: 30px;
+        line-height: 30px;
+        margin: 10px;
+        padding: 4px;
+        font-size: 13px;
+        border-radius: 0px 0px 0px 5px;
+
+    }
+
+    #articles article p {
+
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    #blog {
+
+        display: block;
+        height: 100px;
+        margin-top: 60px;
+        line-height: 100px;
+        text-align: center;
+        font-family: ;
+        font-size: 40px;
+        letter-spacing: 3px;
+        color: #00538c;
+
+    }
+
+    #blog a {
+
+        text-decoration: none;
+
+    }
+
+
+    #menu2 {
+
+
+
+        display: block;
+    }
+
+
+    #plaza {
+
+        display: block;
+        width: 50%;
+        margin-left: 50px;
+
+
+    }
+
+    .plaza {
+
+        box-shadow: 3px 3px 3px #ccc;
+    }
+
+
+    /**footer**/
+    #footer {
+        width: 100%;
+        height: 470px;
+        background-color: black;
+        color: white;
+        overflow: hidden;
+
+
+
+    }
+
+
+
+
+    .navegadores {
+
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .programas {
+
+
+        margin-bottom: 10px;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+
+    #footer .wrap>div {
+
+        float: left;
+        width: 250px;
+        height: 370;
+        margin: 40px;
+        text-align: center;
+        color: white;
+
+    }
+
+    #footer a {
+
+        text-decoration: none;
+        color: #37bcf9;
+        transition: all 300ms;
+    }
+
+    #footer h5 {
+
+
+        display: block;
+        background-color: grey;
+        height: 50px;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 55px;
+        color: black;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        margin-top: -6px;
+    }
+
+    .location {
+
+
+        margin-top: 10px;
+        width: 250px;
+        border-radius: 5px;
+        height: 300px;
+    }
+
+
+    #footer ul {
+
+        text-align: center;
+        margin: 20px;
+        font-size: 25px;
+
+
+
+    }
+
+    #footer ul li {
+        margin-top: 10px;
+        padding: 5px;
+        border-bottom: 1px solid #ccc;
+
+
+
+    }
+
+    #footer ul li a {
+
+        display: block;
+        height: 40px;
+
+
+    }
+
+    #footer ul li a:hover {
+
+        font-size: 20px;
+
+    }
+
+
+
+    .imagenes {
+
+        display: flex;
+        max-width: 1000px;
+
+        margin-left: 150px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .imagenes div {
+
+
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        margin-top: 10px;
+        margin-left: 100px;
+        overflow: hidden;
+        transition: all 300ms;
+        box-shadow: 2px 1px 1px #ccc;
+        border-radius: 5px;
+
+    }
+
+    .imagenes div:hover {
+
+        width: 210px;
+        height: 210px;
+        border: solid black;
+
+
+    }
+
+
+
+
+
+    .plaza {
+
+
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #plaza2 {
+        border-radius: 50%;
+        margin-left: 25%;
+        height: 500px;
+        border: 2px solid #ccc;
+    }
+
+    #plaza2:hover {
+        transition: all 1200ms;
+        border-radius: 0px;
+
+
+
+    }
+
+    .imagenes .div1 {
+
+
+        background-color: black;
+
+    }
+
+    .imagenes .div2 {
+
+
+        background-color: purple;
+
+    }
+
+    .imagenes .div3 {
+
+
+        background-color: rgb(121, 106, 21);
+
+    }
+
+    .imagenes .div4 {
+
+
+        background-color: gray;
+
+    }
+
+    .imagenes .div5 {
+
+
+        background-color: yellow;
+
+    }
+
+    .imagenes .div6 {
+
+
+        background-color: black;
+
+    }
+
+    .imagenes .div7 {
+
+
+        background-color: green;
+
+    }
+
+    .imagenes .div8 {
+
+        background-color: pink;
+
+    }
+
+    .museo-nacional {
+
+        text-align: center;
+        font-size: 50px;
+        margin-top: 20px;
+
+
+
+    }
+</style>
+
+<body>
+    <!-----Inicio del encabezado------>
+    <header id="header">
+
+        <div class="wrap">
+            <div id="logo">
+                <h3>BLOG</h3>
+                <span class="gear"></S></span>
+
+            </div>
+
+            <nav id="menu">
+
+                <ul>
+
+                    <li> <a href="file:///C:/Users/012/OneDrive/Escritorio/pagina%20web/index.html#">Inicio</a></li>
+                    <li> <a href="#" style="color: rgb(13, 155, 221);">Museos</li></a></li>
+                    <li> <a href="file:///C:/Users/012/OneDrive/Escritorio/pagina%20web/Contactanos.html#">Contactanos</li></a></li>
+                    <li> <a href="file:///C:/Users/012/OneDrive/Escritorio/pagina%20web/Registro.html">Registrate</li></a></li>
+
+                    </li></a>
+                </ul>
+
+
+            </nav>
+        </div>
+
+
+    </header>
+    <!------Fin del encabezado--------->
+
+    <!------Inicio del Banner---->
+
+    <section class="wrap">
+
+        <section id="info">
+            <div id="banner">
+
+                <h1> Plaza de la cultura</h1>
+            </div>
+
+
+
+
+
+            <h2  style=" font-size:30px ; margin-bottom: 20px; ">Teatro Nacional</h2>
+
+            <section>
+
+
+                <div>
+                    <article>
+                        <p style=" font-size: 20px;"  > Reconocido como el escenario más importante de Santo Domingo, este hermoso teatro fue
+                            inaugurado en 1973. Desde entonces, lo mejor de la ópera, el ballet, el teatro, la música…,
+                            ha pasado por sus tres salas, todas ellas diseñadas siguiendo el ejemplo de grandes
+                            escenarios de talla mundial, como el Lincoln Center de Nueva York o el Auditorium de Palma
+                            de Mallorca, para lograr una acústica perfecta y permitir el montaje de los mejores
+                            espectáculos.
+
+                            Los vestíbulos del Teatro, decorados con esculturas de grandes figuras de la música –como el
+                            barítono dominicano Eduardo Brito y el gran genio alemán Ludwig van Beethoven– y ricos
+                            detalles en mármol y caoba que contrastan con su alfombra de color rojo intenso, así como el
+                            bar Juan Lockward, famoso por sus elegantes brindis y recepciones, se suman al encanto del
+                            edificio y recuerdan el glamour de la galas artísticas de otras épocas.</p>
+                    </article>
+                </div>
+
+
+
+
+            </section>
+
+            <div class=" imagen16">
+
+                <img src="Imagen 16.jpeg" alt=""
+                    style="width: 700px;  height: 500px; margin-top: 20px; margin-bottom: 80px; ">
+            </div>
+
+            <h2 style=" font-size:30px ; margin-bottom: 20px; ">Museo del Hombre Dominicano</h2>
+
+            <section>
+
+
+                <div>
+                    <article>
+                        <p style=" font-size: 20px;"> En la esquina noreste de la Plaza de la Cultura se encuentra el lugar perfecto para
+                            descubrir la rica historia de la isla de La Española y, en general, de la región del Caribe.
+                            Este museo arqueológico, etnográfico y antropológico, recientemente remodelado, muestra,
+                            sobre todo, diversos objetos originales de los antiguos taínos y otras culturas
+                            prehispánicas, desde herramientas de uso cotidiano hasta bonitas piezas de cerámica.
+
+                            Además del pasado más remoto, en el museo se exhiben también algunos aspectos de la
+                            caleidoscópica cultura dominicana, incluyendo temas como la religión, la fiesta del
+                            carnaval, la esclavitud, la época colonial… interesantes colecciones que dan una buena idea
+                            del mosaico histórico y cultural que es hoy es maravilloso destino caribeño..</p>
+                    </article>
+                </div>
+
+
+
+
+            </section>
+
+            <div class=" imagen16">
+
+                <img src="Museo-del-Hombre-Dominicano-3.jpg" alt=""
+                    style="width: 700px;  height: 500px; margin-top: 20px; margin-bottom: 80px; ">
+            </div>
+
+
+
+            <h2 style=" font-size:30px ; margin-bottom: 20px; ">Museo de Arte Moderno</h2>
+
+            <section>
+
+
+                <div>
+                    <article>
+                        <p style=" font-size: 20px;">Escultura, pintura, dibujo, grabado y fotografía; más de un siglo de arte moderno y
+                            contemporáneo componen la colección permanente del MAM. Inaugurado en 1976 y también
+                            remodelado hace poco tiempo, este museo cuenta con varias salas distribuidas en cuatro
+                            niveles, en las que muestra buena parte de las más de mil obras que componen su acervo, la
+                            mayoría de arte dominicano pero también caribeño e iberoamericano. Además, este museo suele
+                            presentar distintas exposiciones temporales y es la sede de la Bienal Nacional de Artes
+                            Visuales, entre otros eventos del mundo del arte.
+
+                            La biblioteca, especializada en artes visuales; la tienda del museo, que ofrece piezas de
+                            arte y artesanía de creadores locales, además de libros, revistas y catálogos de distintas
+                            exposiciones; y el auditorio, que suele albergar conferencias y seminarios sobre arte
+                            moderno y contemporáneo, terminan por completar las instalaciones de este interesante
+                            espacio</p>
+                    </article>
+                </div>
+
+
+
+
+            </section>
+
+            <div class=" imagen16">
+
+                <img src="Museo-de-Arte-Moderno-4.jpg" alt=""
+                    style="width: 700px;  height: 500px; margin-top: 20px; margin-bottom: 80px; ">
+            </div>
+
+
+
+
+
+            <h2 style=" font-size:30px ; margin-bottom: 20px; ">Museo Nacional de Historia Natural “Prof. Eugenio de Jesús Marcano”</h2>
+
+            <section>
+
+
+                <div>
+                    <article>
+                        <p style=" font-size: 20px;"> La isla de La Española, en particular, y la región del Caribe, en general, son sinónimo de
+                            una biodiversidad única en nuestro planeta. Y eso es justamente lo que muestra este
+                            increíble museo a través de decenas de miles de ejemplares organizados en varias
+                            colecciones, desde enormes esqueletos de ballenas hasta diminutos insectos, pasando por
+                            numerosas muestras de rocas y minerales, entre muchísimos otros objetos.
+
+                            Visitas guiadas por las salas del museo, conferencias breves sobre flora y fauna, y jornadas
+                            de observación astronómica son solo algunas de las actividades que se suman a las múltiples
+                            herramientas museográficas que hacen de este lugar en el lado sur de la Plaza de la Cultura
+                            una visita más que atractiva para toda la familia..</p>
+                    </article>
+
+                    <div class=" imagen16">
+
+                        <img src="Museo de historia natural.jfif" alt=""
+                            style="width: 700px;  height: 500px; margin-top: 20px; margin-bottom: 80px; ">
+                    </div>
+                </div>
+
+
+                <h2 style=" font-size:30px ; margin-bottom: 20px; ">Museo de Historia y Geografía</h2>
+
+                <section>
+
+
+                    <div>
+                        <article>
+                            <p style=" font-size: 20px;"> Cerrado desde 2005, este museo ha sido totalmente remodelado y solo se espera la nueva
+                                organización de sus colecciones para que finalmente pueda abrir sus puertas al público
+                                una vez más. Cuando esto suceda, el museo volverá a mostrar, como su nombre indica, los
+                                elementos que dan fondo y forma República Dominicana; piezas originales, de enorme valor
+                                histórico, que son testimonio del desarrollo político, social y cultural que define al
+                                país y su gente, desde la Primera República hasta nuestros días.</p>
+                        </article>
+                    </div>
+
+
+
+
+                </section>
+
+                <div class=" imagen16">
+
+                    <img src="6-Museo-de-Historia-y-Geografía-en-la-Plaza-de-la-Cultura-scaled.jpg" alt=""
+                        style="width: 700px;  height: 500px; margin-top: 20px; margin-bottom: 40px; ">
+                </div>
+
+
+
+                <div class="clearfix"></div>
+                <footer id="footer">
+
+
+                    <div class="wrap">
+
+
+                        <div id="menu2">
+                            <h5>MENU</h5>
+                            <ul>
+
+                                <li> <a href="#">INICIO</a></li>
+                                <li> <a href="#">BLOG</li></a></li>
+                                <li> <a href="#">FORMACION</li></a></li>
+                                <li> <a href="#">CONTACTO</li></a></li>
+
+
+                            </ul>
+
+
+                        </div>
+
+
+
+                        <div id="location">
+
+                            <h5>¿Donde estamos?</h5>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7568.63685239961!2d-69.91363806972417!3d18.469230212700452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89d2fa6054ab%3A0x7b65d5b7ca6bd17!2sPlaza%20De%20La%20Cultura!5e0!3m2!1ses-419!2sdo!4v1628995266690!5m2!1ses-419!2sdo"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                class="location"></iframe>
+                        </div>
+
+
+                        <div id="info">
+                            <h5>Desarrollado con</h5>
+                            <p>
+
+                                <img src="imagenproyecto1.jpg" alt="Creado con HTML,CSS y JAVASCRIP"
+                                    title="HTML, CSS y JavaScrip" class="programas">
+                            </p>
+
+
+                            <h5>Optimizado para </h5>
+                            <p id="browsers">
+                                <a href="#">
+
+
+                                    <img src="../pagina web/Navegadores.jpg" alt="" class="navegadores"
+                                        title="Navegadores">
+                                </a>
+
+
+                            </p>
+
+                            <h5 class="autores"> Autores</h5>
+                            <p> &copy; Pedro Xavier 18-MIST-1-022</p>
+                            <P>&copy; Yorgelis Lluberes 18-SIST-1-067</P>
+                            <P> &copy; Olmelfy Castro 18-EIST-1-004</P>
+
+
+                        </div>
+
+
+
+                    </div>
+
+                </footer>
+
+
+
+                <!-----fin del footer-->
+
+
+
+
+</body>
+
+
+</html>
